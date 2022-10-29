@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Wiktor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 05:05:14 PM"/>
+        <attribute name="created" value="V2lrdG9yO0xBUFRPUC1UOU9HM0xEUzsyMDIyLTEwLTI4OzA1OjI5OjA2IFBNOzMwMDE="/>
+        <attribute name="edited" value="V2lrdG9yO0xBUFRPUC1UOU9HM0xEUzsyMDIyLTEwLTI5OzA1OjA1OjE0IFBNOzE7MzEwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, k, o, s, min, max, p" type="Real" array="False" size=""/>
+            <assign variable="s" expression="0"/>
+            <input variable="n"/>
+            <input variable="k"/>
+            <assign variable="p" expression="n-k"/>
+            <while expression="k&gt;0">
+                <input variable="o"/>
+                <assign variable="s" expression="o+s"/>
+                <assign variable="k" expression="k-1"/>
+            </while>
+            <assign variable="min" expression="(p*(-3)+s)/n"/>
+            <output expression="min" newline="True"/>
+            <assign variable="max" expression="(p*3+s)/n"/>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
